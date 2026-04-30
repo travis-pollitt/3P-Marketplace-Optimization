@@ -1,23 +1,15 @@
-# UT Austin – AI & Machine Learning Portfolio
+# Gig Economy Data Analysis (Python Foundations)
 
-This repository contains selected coursework and applied projects completed as part of the University of Texas at Austin – Post Graduate Program in Artificial Intelligence & Machine Learning.
+This repository highlights key learnings from Project 1 as part of the University of Texas at Austin – Post Graduate Program in Artificial Intelligence & Machine Learning. Each project is implemented as a Google Colab notebook and focuses on applying machine learning techniques to real-world, business-relevant problems.
 
-Each project is implemented as a Jupyter notebook and focuses on applying machine learning techniques to real-world, business-relevant problems.
+## The Problem
+* What pain point does this solve? Be specific about who has this problem.
 
-## Project 1: Gig Economy Data Analysis
+## The Solution
+* What does the tool do? How does the user interact with it?
 
-- 📓 Context:
--  Objective:
--  Actions I took:
--  What I learned:
-- ▶️ Open in Colab:  
-https://colab.research.google.com/drive/11suT4LwpzoTM19Tjazv0FLJbNG5k8f4V#scrollTo=zq3hbFpsKAOM)
+## Tradeoffs and Decisions
+* This section is what separates a PM GitHub from an engineer’s. Explain 1-2 decisions you made and why. What did you consider? What did you choose and why?
 
-## Project 2: Customer Segmentation for Financial Services
-
-- 📓 Context:
--  Objective:
--  Actions I took:
--  What I learned:
-- ▶️ Open in Colab:  
-https://colab.research.google.com/drive/19jlhR5XpBT_EZoG5O_jBmuZPOfMnW2lJ?pli=1#scrollTo=vb-iuMZQkcDL
+## What I Learned
+* Real insights. Not “I learned a lot about APIs.” Something like: “Clustering user feedback by embedding similarity catches patterns keyword matching misses, but it groups unrelated complaints when the sample size is under 50.”
