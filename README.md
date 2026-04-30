@@ -1,11 +1,14 @@
 # Gig Economy Data Analysis (Python Foundations)
 
-This repository highlights key learnings from Project 1 as part of the University of Texas at Austin – Post Graduate Program in Artificial Intelligence & Machine Learning. Each project is implemented as a Google Colab notebook and focuses on applying machine learning techniques to real-world, business-relevant problems.
+This repo highlights key learnings from my first project as part of the University of Texas at Austin – Post Graduate Program in Artificial Intelligence & Machine Learning program. This project specifically focuses on the python foundations required to complete Exploratory Data Analysis. The company referenced in this repo, FoodHub, is fictional. Please reference the 'XYZ' PDF listed above for more information. 
 
-## The Problem
+## Business Context
+* TBD
+
+## Problem Statement
 * What pain point does this solve? Be specific about who has this problem.
 
-## The Solution
+## Solution Alignment
 * What does the tool do? How does the user interact with it?
 
 ## Tradeoffs and Decisions
