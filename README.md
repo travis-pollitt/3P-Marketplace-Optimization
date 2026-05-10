@@ -1,6 +1,10 @@
-# Gig Economy Data Analysis (Python Foundations)
+# Third-Party Marketplace Optimization
 
-This repo highlights key learnings from my first project as part of the University of Texas at Austin – Post Graduate Program in Artificial Intelligence & Machine Learning program. This project specifically focuses on the python foundations required to complete Exploratory Data Analysis. The company referenced in this repo, FoodHub, is fictional. Please reference the 'XYZ' PDF listed above for more information. 
+"Foodhub" runs a third party marketplace offering access to multiple restaurants through a single smartphone app. The app allows restaurants to receive a direct online order from a customer before assigning a delivery person to pick up the order after its confirmed by the restaurant.
+
+The delivery person then uses the Foodhub app to reach the restaurant and waits for the order. Once the order is handed over to the delivery person, he/she confirms the pick-up in the app and travels to the customer's location to deliver the food. 
+
+After drop-off, the delivery person confirms delivery success in the app. Customers also use the Foodhub app to rate their experience. Foodhub ultimately earns revenue by collecting a fixed margin of the delivery order from the restaurants before paying delivery persons, who work as independent contractors.
 
 ## Business Context
 * TBD
