@@ -1,22 +1,28 @@
 # Third-Party Marketplace Optimization
 
-"Foodhub" runs a third party marketplace offering access to multiple restaurants through a single smartphone app. The app allows restaurants to receive a direct online order from a customer before assigning a delivery person to pick up the order after its confirmed by the restaurant.
-
-The delivery person then uses the Foodhub app to reach the restaurant and waits for the order. Once the order is handed over to the delivery person, he/she confirms the pick-up in the app and travels to the customer's location to deliver the food. 
-
-After drop-off, the delivery person confirms delivery success in the app. Customers also use the Foodhub app to rate their experience. Foodhub ultimately earns revenue by collecting a fixed margin of the delivery order from the restaurants before paying delivery persons, who work as independent contractors.
+Bullets
+* "Foodhub" operates a fictional third party marketplace, matching customers looking for food delivery with local restaurants aiming to grow sales and independent contractors looking to work flexible hours.
+* Foodhub's existing business model focuses on providing New York based students and professionals with online delivery service, competing with Uber Eats, DoorDash, and Wonder, among many others.
+* This project explores the relationship between customer demand and restaurant cuisine type using explatory data analysis to make recommendations aimed to improve Foodhub business operations.
 
 ## Business Context
-* TBD
+* To conduct this analysis, I'm analyzing 1,898 customer orders from Foodhub's online portal.
+* The existing dataset contains nine columns and zero missing values, meaning I will skip the data preprocessing step.
 
 ## Problem Statement
-* What pain point does this solve? Be specific about who has this problem.
+* Which customer has the problem: Without understanding customer demand patterns, Foodhub risks long customer wait times before delivery, understaffing their delivery network during busy times, and missed opportunities to maximize revenue through customer incentives or surge pricing.
+* Why this problem matters: Steady and predictable customer demand impacts all sides of Foodhub's marketplace. Customers expect quick delivery times when they're hungry, delivery persons expect available orders to deliver when they login, and businesses must understand when demand for their food will reach its highest points.
+* Where the business values lies: Optimizing customer demand is critical for Foodhub as they look to scale their platform in the future.
+* What behavior needs to change: Understanding customer demand patterns will allow Foodhub to create a personalized engagement strategy with customers, nudging them back into the Foodhub app when they are most likely to order.
 
 ## Solution Alignment
-* What does the tool do? How does the user interact with it?
+* TBD
 
 ## Tradeoffs and Decisions
-* This section is what separates a PM GitHub from an engineer’s. Explain 1-2 decisions you made and why. What did you consider? What did you choose and why?
+* Customer Experience vs Foodhub Profit Margin: Customers face longer wait times during the week, despite less traffic on the platform. One way to solve this issue is paying delivery persons more for each order, which will likely increase the number of available drivers (second order effect) and likely decrease delivery time (third order effect). Foodhub's operating margins may not allow for this change; reducing profit margin for each delivery may cause real harm to the company's quarterly revenues.
+* TBD
 
 ## What I Learned
-* Real insights. Not “I learned a lot about APIs.” Something like: “Clustering user feedback by embedding similarity catches patterns keyword matching misses, but it groups unrelated complaints when the sample size is under 50.”
+* Build strong functional context by understanding the structure of each dataset
+* Optimizing a third party marketplace brings many tradeoffs; product or operational changes may negatively impact one side of the marketplace, or the business itself. Contextulizing the existing business environment and understanding's the company's appetitite for innotivation risk is critical.
+* Objectives of data analysis efforts should be clearly defined ahead of time; if not, one runs the risk of need more and more data to make a decision.
