@@ -1,13 +1,13 @@
 # Third-Party Marketplace Optimization
 
-"Foodhub" operates a fictional third party marketplace, matching customers looking for food delivery with local restaurants aiming to grow sales and independent contractors looking to work flexible hours. The company's existing business model focuses on providing New York-based students and professionals with online delivery service, competing with Uber Eats, DoorDash, and Wonder, among many others.
+"Foodhub" operates a fictional third party marketplace, integrating hungry customers desiring delivery with local restaurants aiming to grow sales and independent delivery persons looking to work flexible hours. The company's existing business model focuses on providing New York-based students and professionals with online delivery services, competing with Uber Eats, DoorDash, and Wonder, among many others.
 
-This project explores the relationship between customer demand and customer experience using explatory data analysis to make recommendations aimed to improve Foodhub business operations.
+This project explores the relationship between customer demand and customer experience using explatory data analysis to make recommendations aimed to improve Foodhub's business operations.
 
 ## Business Context
-Foodhub's three-sided marketplace relies on strong, consistent customer demand to satisfy customer, delivery persons, and restaurants.
-* To conduct this analysis, I'm analyzing 1,898 customer orders from Foodhub's online portal.
-* The existing dataset contains nine columns and zero missing values, meaning I will skip the data preprocessing step.
+Foodhub's three-sided marketplace relies on strong, consistent customer demand to satisfy customer order, delivery person pay, and restaurant revenue. Insights into customer demand patterns will guide product prioritization across each side of the marketplace.
+
+Before prioritizing product solutions, however, I'll hypothesize the "why" behind customer demand patterns uncovered.
 
 ## Problem Statement
 * Which customer has the problem: Without understanding customer demand patterns, Foodhub risks long customer wait times before delivery, understaffing their delivery network during busy times, and missed opportunities to maximize revenue through customer incentives or surge pricing.
