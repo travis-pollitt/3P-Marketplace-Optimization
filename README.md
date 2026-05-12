@@ -7,7 +7,7 @@ This project explores the relationship between customer demand and customer expe
 ## Business Context
 Foodhub's three-sided marketplace relies on strong, consistent customer demand to satisfy customer order, delivery person pay, and restaurant revenue. Insights into customer demand patterns will guide product prioritization across each side of the marketplace.
 
-Before prioritizing product solutions, however, I'll hypothesize the "why" behind customer demand patterns uncovered.
+Before prioritizing product solutions, however, I'll hypothesize the "why" behind certain customer demand patterns and discuss the ramificiations for customers, delivery persons, and restaurants.
 
 ## Problem Statement
 * Which customer has the problem: Without understanding customer demand patterns, Foodhub risks long customer wait times before delivery, understaffing their delivery network during busy times, and missed opportunities to maximize revenue through customer incentives or surge pricing.
