@@ -1,11 +1,11 @@
 # Third-Party Marketplace Optimization
 
-Bullets
-* "Foodhub" operates a fictional third party marketplace, matching customers looking for food delivery with local restaurants aiming to grow sales and independent contractors looking to work flexible hours.
-* Foodhub's existing business model focuses on providing New York based students and professionals with online delivery service, competing with Uber Eats, DoorDash, and Wonder, among many others.
-* This project explores the relationship between customer demand and restaurant cuisine type using explatory data analysis to make recommendations aimed to improve Foodhub business operations.
+"Foodhub" operates a fictional third party marketplace, matching customers looking for food delivery with local restaurants aiming to grow sales and independent contractors looking to work flexible hours. The company's existing business model focuses on providing New York-based students and professionals with online delivery service, competing with Uber Eats, DoorDash, and Wonder, among many others.
+
+This project explores the relationship between customer demand and customer experience using explatory data analysis to make recommendations aimed to improve Foodhub business operations.
 
 ## Business Context
+Foodhub's three-sided marketplace relies on strong, consistent customer demand to satisfy customer, delivery persons, and restaurants.
 * To conduct this analysis, I'm analyzing 1,898 customer orders from Foodhub's online portal.
 * The existing dataset contains nine columns and zero missing values, meaning I will skip the data preprocessing step.
 
