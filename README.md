@@ -10,10 +10,7 @@ Foodhub's three-sided marketplace relies on strong, consistent customer demand t
 Before prioritizing product solutions, however, I'll hypothesize the "why" behind certain customer demand patterns and discuss the ramificiations for customers, delivery persons, and restaurants.
 
 ## Problem Statement
-* Which customer has the problem: Without understanding customer demand patterns, Foodhub risks long customer wait times before delivery, understaffing their delivery network during busy times, and missed opportunities to maximize revenue through customer incentives or surge pricing.
-* Why this problem matters: Steady and predictable customer demand impacts all sides of Foodhub's marketplace. Customers expect quick delivery times when they're hungry, delivery persons expect available orders to deliver when they login, and businesses must understand when demand for their food will reach its highest points.
-* Where the business values lies: Optimizing customer demand is critical for Foodhub as they look to scale their platform in the future.
-* What behavior needs to change: Understanding customer demand patterns will allow Foodhub to create a personalized engagement strategy with customers, nudging them back into the Foodhub app when they are most likely to order.
+Foodhub has not operationalized their customer order data currently stored in an online portal. Without consistent insights into customer demand, the company risks running experiments or making product changes without properly weighing potential impacts on customer demand. Limited insights into customer demand may result in long customer order times, delivery persons unable to find available orders, and restaurants unable to staff appropriately. If not solved for, unclear customer demand will create churn risk for all sides of the marketplace.
 
 ## Solution Alignment
 * TBD
