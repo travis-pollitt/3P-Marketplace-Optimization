@@ -38,11 +38,11 @@ Fully leveraging Foodhub's customer demand data requires building a complex mach
 
 _Key Insight:_ Weekday delivery time is six minutes slower then weekend delivery time despite less traffic on the plaform.
 
-## Tradeoffs and Decisions
+## Tradeoffs and Decisions (WIP)
 * Customer Experience vs Foodhub Profit Margin: Customers face longer wait times during the week, despite less traffic on the platform. One way to solve this issue is paying delivery persons more for each order, which will likely increase the number of available drivers (second order effect) and likely decrease delivery time (third order effect). Foodhub's operating margins may not allow for this change; reducing profit margin for each delivery may cause real harm to the company's quarterly revenues.
 * TBD
 
-## What I Learned
+## What I Learned (WIP)
 * Build strong functional context by understanding the structure of each dataset
 * Optimizing a third party marketplace brings many tradeoffs; product or operational changes may negatively impact one side of the marketplace, or the business itself. Contextulizing the existing business environment and understanding's the company's appetitite for innotivation risk is critical.
 * Objectives of data analysis efforts should be clearly defined ahead of time; if not, one runs the risk of need more and more data to make a decision.
