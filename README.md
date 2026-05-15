@@ -2,7 +2,7 @@
 
 "Foodhub" operates a fictional third party marketplace, integrating hungry customers desiring delivery with local restaurants aiming to grow sales and independent delivery persons looking to work flexible hours. Intense competition from established players requires Foodhub to creatively scale operations while attracting new customers, drivers, and restaurants.
 
-This project explores the relationship between customer demand and customer experience using explatory data analysis to make recommendations aimed at improving Foodhub's business operations.
+This project explores the relationship between customer demand and customer delivery using explatory data analysis to make recommendations aimed at improving Foodhub's business operations.
 
 ## Business Context
 Foodhub's three-sided marketplace relies on strong, consistent customer demand to satisfy customer order, delivery person pay, and restaurant revenue. Insights into customer demand and its relationship on delivery times will guide product prioritization across each side of the marketplace.
