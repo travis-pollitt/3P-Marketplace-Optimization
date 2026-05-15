@@ -36,11 +36,16 @@ Fully leveraging Foodhub's customer demand data requires building a complex mach
   * Relationships between numerical variables
   * Relationships between categorical variables
 
-_Key Insight:_ Weekday delivery time is six minutes slower then weekend delivery time despite less traffic on the plaform.
+3 key insights emerged:
+* Weekday delivery time is six minutes slower then weekend delivery time despite less traffic on the plaform.
+* TBD
+* TBD
 
 ## Tradeoffs and Decisions (WIP)
-* Customer Experience vs Foodhub Profit Margin: Customers face longer wait times during the week, despite less traffic on the platform. One way to solve this issue is paying delivery persons more for each order, which will likely increase the number of available drivers (second order effect) and likely decrease delivery time (third order effect). Foodhub's operating margins may not allow for this change; reducing profit margin for each delivery may cause real harm to the company's quarterly revenues.
-* TBD
+* Choosing an insight to focus on
+* Deciding what problem is worth solving - all sides of marketplace or less?
+* Sizing the opportunity
+* how to approach solutions
 
 ## What I Learned (WIP)
 * Build strong functional context by understanding the structure of each dataset
