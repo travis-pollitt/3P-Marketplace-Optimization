@@ -17,9 +17,19 @@ Foodhub currently lacks insights into customer demand data when making product a
   * Restaurants facing staffing challenges in the event customer demand exceeds/lags expectations
 
 ## Solution Alignment
-Fully leveraging Foodhub's customer demand data requires building a complex machine learning model incorporating customer demand, delivery person supply, delivery person pay, and restaurant availability. This analysis focuses on initial exploratory data analysis pre-model build.
+Fully leveraging Foodhub's customer demand data requires building a complex machine learning model incorporating customer demand, delivery person supply, delivery person pay, and restaurant availability. This analysis covers the initial exploratory data analysis pre-model build.
 
-
+Steps completed:
+  * Understanding the structure of the data - data shape, data types, missing values, statistical summary
+  * Univariate analysis
+   * Exploring all variables and providing observations on their distributions
+   * Top 5 restaurants by order received
+   * Most popular cuisine on weekends
+   * % of orders costing more than 20 dollars
+   * Mean order delivery time
+  * Multivariate analysis
+   * Relationships between numerical variables
+   * Relationships between categorical variables
 
 ## Tradeoffs and Decisions
 * Customer Experience vs Foodhub Profit Margin: Customers face longer wait times during the week, despite less traffic on the platform. One way to solve this issue is paying delivery persons more for each order, which will likely increase the number of available drivers (second order effect) and likely decrease delivery time (third order effect). Foodhub's operating margins may not allow for this change; reducing profit margin for each delivery may cause real harm to the company's quarterly revenues.
