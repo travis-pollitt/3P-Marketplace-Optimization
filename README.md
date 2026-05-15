@@ -48,6 +48,6 @@ Fully leveraging Foodhub's customer demand data requires building a complex mach
 * how to approach solutions
 
 ## What I Learned (WIP)
-* Build strong functional context by understanding the structure of each dataset
-* Optimizing a third party marketplace brings many tradeoffs; product or operational changes may negatively impact one side of the marketplace, or the business itself. Contextulizing the existing business environment and understanding's the company's appetitite for innotivation risk is critical.
-* Objectives of data analysis efforts should be clearly defined ahead of time; if not, one runs the risk of need more and more data to make a decision.
+* context on UTA project 1
+* python for data analysis
+* Exploratory Data Analysis Lifecycle - starting discovery before Data Science
