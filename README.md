@@ -19,20 +19,20 @@ Foodhub currently lacks insights into customer demand data when making product a
 ## Solution Alignment
 Fully leveraging Foodhub's customer demand data requires building a complex machine learning model incorporating customer demand, delivery person supply, delivery person pay, and restaurant availability. This analysis covers the initial exploratory data analysis pre-model build. Steps completed:
 
-####Understanding the structure of the data
+#### Understanding the structure of the data
   * Data shape
   * Data types
   * Missing values
   * Statistical summary
 
-####Univariate analysis
+#### Univariate analysis
   * Exploring all variables and providing observations on their distributions
   * Top 5 restaurants by order received
   * Most popular cuisine on weekends
   * % of orders costing more than 20 dollars
   * Mean order delivery time
 
-####Multivariate analysis
+#### Multivariate analysis
   * Relationships between numerical variables
   * Relationships between categorical variables
 
