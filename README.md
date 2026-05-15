@@ -36,6 +36,8 @@ Fully leveraging Foodhub's customer demand data requires building a complex mach
   * Relationships between numerical variables
   * Relationships between categorical variables
 
+_Key Insight:_ Weekday delivery time is six minutes slower then weekend delivery time despite less traffic on the plaform.
+
 ## Tradeoffs and Decisions
 * Customer Experience vs Foodhub Profit Margin: Customers face longer wait times during the week, despite less traffic on the platform. One way to solve this issue is paying delivery persons more for each order, which will likely increase the number of available drivers (second order effect) and likely decrease delivery time (third order effect). Foodhub's operating margins may not allow for this change; reducing profit margin for each delivery may cause real harm to the company's quarterly revenues.
 * TBD
