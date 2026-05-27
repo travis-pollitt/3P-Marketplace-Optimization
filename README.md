@@ -7,7 +7,7 @@ This project explores Foodhub's customer demand data to uncover where potential 
 ## Business Context
 Foodhub's three-sided marketplace relies on strong, consistent customer demand to satisfy customer order, delivery person pay, and restaurant revenue. Insights into customer demand and its relationship on delivery times will guide product prioritization across each side of the marketplace.
 
-Customer demand may impact delivery time; however, factors such as delivery person supply, restaurant performance, traffic, and weather can cause short-term performance degradation.
+Customer demand may impact delivery time; however, factors such as delivery person supply, restaurant performance, traffic, and weather can also cause short-term performance degradation.
 
 ## Problem Statement
 Foodhub currently lacks insights into customer demand data when making product and operations decisions. Without insights into customer demand, the company risks major supply imbalances across each side of the marketplace:
