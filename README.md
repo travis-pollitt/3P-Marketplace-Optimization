@@ -36,7 +36,7 @@ Fully leveraging Foodhub's customer demand data requires building a complex mach
   * Relationships between numerical variables
   * Relationships between categorical variables
 
-3 key insights emerged:
+#### 3 key insights emerged:
 * Weekday delivery time is six minutes slower then weekend delivery time despite less traffic on the plaform.
 * 10% of customer orders take longer than 60 minutes to deliver.
 * Indian, Italian, and Vietenemase cuisines skew towards five star reviews while remaining more popular during the week, which contradicts the broader platform's popularity on weekends.
