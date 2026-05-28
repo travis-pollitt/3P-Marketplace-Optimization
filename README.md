@@ -10,7 +10,7 @@ Foodhub's three-sided marketplace relies on strong, consistent customer demand t
 Customer demand may impact delivery time; however, factors such as delivery person supply, restaurant performance, traffic, and weather can also cause short-term performance degradation.
 
 ## Problem Statement
-Foodhub currently lacks insights into customer demand data when making product and operations decisions. Without insights into customer demand, the company risks major supply imbalances across each side of the marketplace:
+Foodhub currently lacks insights into customer demand data when making product and operational decisions. Without insights into customer demand, the company risks major supply imbalances across each side of the marketplace:
 
   * Customers facing long delivery times due to low delivery person supply
   * Delivery persons facing low earnings per hour resulting from low customer demand
@@ -38,8 +38,8 @@ Fully leveraging Foodhub's customer demand data requires building a complex mach
 
 3 key insights emerged:
 * Weekday delivery time is six minutes slower then weekend delivery time despite less traffic on the plaform.
-* TBD
-* TBD
+* 10% of customer orders take longer than 60 minutes to deliver.
+* Indian, Italian, and Vietenemase cuisines skew towards five star reviews while remaining more popular during the week, which contradicts the broader platform's popularity on weekends.
 
 ## Tradeoffs and Decisions (WIP)
 * Choosing an insight to focus on
