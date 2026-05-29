@@ -42,6 +42,7 @@ Fully leveraging Foodhub's customer demand data requires building a complex mach
 * Indian, Italian, and Vietenemase cuisines skew towards five star reviews while remaining more popular during the week, which contradicts the broader platform's popularity on weekends.
 
 ## Tradeoffs and Decisions
+#### Tradeoff #1: Choosing an insight to focus on
 Focusing solely on the 10% of customer orders taking longer than 60 minutes to deliver allows Foodhub to invest resources into a problem that impacts each side of the marketplace. If 10% of Foodhub customers face a poor delivery experience:
 
 * Customers may become frustrated with the time it takes Foodhub orders to arrive
@@ -50,7 +51,11 @@ Focusing solely on the 10% of customer orders taking longer than 60 minutes to d
 
 Foodhub is a New York based company; customers, delivery persons, and restaurants all have alternative options if their experience fails to meet expectations. Supply/demand imbalances, a poor app experience for delivery persons, or challenges with certain restaurants are among the many reasons customer orders may be late.
 
-Prioritizing problem discovery with limited data is challenging. Given the current constraints, starting problem discovery on the delivery person app experience enables Foodhub to solve a critical customer problem without experimenting with delivery pay or restaurant partnership deals. Foodhub's delivery app may have user experience issues, performance issues, or some combination of the two that become simpler problems to solve.
+#### Tradeoff #2: Partner Pay Incentives vs Product Enhancements
+Prioritizing problem discovery with limited data is challenging. Given the current constraints, starting problem discovery on the delivery person app experience enables Foodhub to solve a critical customer problem without experimenting with delivery pay or restaurant partnership deals. 
+
+#### Decision
+Foodhub's delivery app may have user experience issues, performance issues, or some combination of the two that become simpler problems to solve.
 
 
 ## What I Learned (TBD)
