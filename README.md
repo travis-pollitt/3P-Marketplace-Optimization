@@ -41,13 +41,19 @@ Fully leveraging Foodhub's customer demand data requires building a complex mach
 * 10% of customer orders take longer than 60 minutes to deliver.
 * Indian, Italian, and Vietenemase cuisines skew towards five star reviews while remaining more popular during the week, which contradicts the broader platform's popularity on weekends.
 
-## Tradeoffs and Decisions (WIP)
-* Choosing an insight to focus on
-* Deciding what problem is worth solving - all sides of marketplace or less?
-* Sizing the opportunity
-* how to approach solutions
+## Tradeoffs and Decisions
+Focusing solely on the 10% of customer orders taking longer than 60 minutes to deliver allows Foodhub to invest resources into a problem that impacts each side of the marketplace. If 10% of Foodhub customers face a poor delivery experience:
 
-## What I Learned (WIP)
+* Customers may become frustrated with the time it takes Foodhub orders to arrive
+* Delivery persons may lose tips due to frustrated customers (even if they are not at fault) or fail to optimize their pay while delivering
+* Restaurants may become concerned delayed orders will harm their reputation and slow revenue growth
+
+Foodhub is a New York based company; customers, delivery persons, and restaurants all have alternative options if their experience fails to meet expectations. Supply/demand imbalances, a poor app experience for delivery persons, or challenges with certain restaurants are among the many reasons customer orders may be late.
+
+Prioritizing problem discovery with limited data is challenging. Given the current constraints, starting problem discovery on the delivery person app experience enables Foodhub to solve a critical customer problem without experimenting with delivery pay or restaurant partnership deals. Foodhub's delivery app may have user experience issues, performance issues, or some combination of the two that become simpler problems to solve.
+
+
+## What I Learned (TBD)
 * context on UTA project 1
 * python for data analysis
 * Exploratory Data Analysis Lifecycle - starting discovery before Data Science
