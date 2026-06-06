@@ -12,12 +12,12 @@ Customer demand may impact delivery time; however, factors such as courier suppl
 ## Problem Statement
 Foodhub currently lacks insights into customer demand data when making product and operational decisions. Without insights into customer demand, the company risks major supply imbalances across each side of the marketplace:
 
-  * Customers face long delivery times due to low delivery person supply
+  * Customers face long delivery times due to low courier supply
   * Couriers face low earnings per hour resulting from low customer demand
   * Restaurants face staffing challenges in the event customer demand exceeds/lags expectations
 
 ## Solution Alignment
-Fully leveraging Foodhub's customer demand data requires building a complex machine learning model incorporating customer demand, delivery person supply, courier pay, and restaurant availability. This analysis covers the initial exploratory data analysis pre-model build. Steps completed:
+Solution development follows the first project from UT Austin's Postgraduate Program in Machine Learning & Artificial Intelligence for Business Applications. This solution covers the initial exploratory data analysis pre-model build. Steps completed:
 
 #### Understanding the structure of the data
   * Data shape
@@ -43,7 +43,7 @@ Fully leveraging Foodhub's customer demand data requires building a complex mach
 
 ## Tradeoffs and Decisions
 #### Tradeoff #1: Choosing an insight to focus on
-Focusing solely on the 10% of customer orders taking longer than 60 minutes to deliver allows Foodhub to invest resources into a problem that impacts topline business meetrics and each side of the marketplace. If 10% of Foodhub customers face a poor delivery experience:
+Focusing solely on orders taking longer than 60 minutes (%>60mins) to deliver allows Foodhub to invest resources into a problem that impacts topline business metrics and each side of the marketplace. If 10% of Foodhub customers encounter delayed orders:
 
 * Customers may lose confidence in the Foodhub platform and take their business elsewhere
 * Couriers may feel their time is better spent delivering for other marketplace apps
