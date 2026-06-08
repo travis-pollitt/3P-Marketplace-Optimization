@@ -69,19 +69,30 @@ With limited data-driven insights into Foodhub's current operations, early probl
 
 Three potential hypotheses on why 10% of customer orders take longer than 60 minutes to deliver:
 
-1 - title
-<rationale>
-< impact * confidence * effort >
+1 - Foodhub's on-trip navigation capabilities are underperforming
+Navigating New York City traffic is no small feat. Courier routes that appear optimal during certain times of the day may cause significant delays during rush hour. Foodhub's courier app may struggle to accurately predict traffic patterns or potential delays in pockets of the city.
 
-2 - title
-<rationale>
-< impact * confidence * effort >
+Impact: High
+Confidence: Medium
+Effort: Medium/High
 
-3 - title
-<rationale>
-< impact * confidence * effort >
+2 - Foodhub's pricing algorithms are disconnected from supply-demand challenges
+When pricing orders, Foodhub must unpack many different nuances. Courier supply and restaurant demand may not always align on the platform. Additionally, the company likely faces margin pressure from more established competitors in the space. If Foodhub orders are not especially appealing for couriers, couriers may choose to spend their time on other apps, which harms courier supply and results in Foodhub customer orders arriving late.
+
+Impact: High
+Confidence: Low/Medium
+Effort: High
+
+3 - Foodhub's courier app provides a poor courier experience at pick-up or drop-off
+Couriers must deal with constant ambiguity while using the Foodhub app. For example, restaurants may have different processes for pickup. Some customers may prefer face-to-face pickup, while others may prefer no contact drop-off. Handling all unique delivery edge cases might compete against building net-new features in the app. 
+
+Impact: High
+Confidence: Low
+Effort: Medium
 
 <Designing first experiment>
+To validate Foodhub's on-trip navigation capabilities, 
+
 
 ## What I Learned (TBD)
 * context on UTA project 1
