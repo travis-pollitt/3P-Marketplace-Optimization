@@ -64,7 +64,7 @@ Determining where to focus initial product discovery presents the first tradeoff
 
 To support the courier journey, Foodhub's courier app must navigate supply-demand imbalances, batching, delivery distance, variance in restaurant prep time, and dispatch logic all while creating an intuititve courier app experience. Given our target metric is focused on delivery efficiency, starting discovery on the courier side of the marketplace is warranted.
 
-Focusing discovery on Foodhub's courier app introduces another tradeoff: identifying where to start problem discovery across the courier journey.
+Focusing discovery on Foodhub's courier marketplace introduces another tradeoff: identifying where to start problem discovery across the courier journey.
 
 #### Decision
 Foodhub's delivery app may have user experience issues, performance issues, or some combination of the two that become simpler problems to solve.
