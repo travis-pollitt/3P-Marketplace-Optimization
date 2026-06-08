@@ -53,8 +53,8 @@ Weekday and weekend delivery time gaps are worth exploring, though a 6 minute ga
 
 Foodhub is a New York based company; customers, couriers, and restaurants all have alternative options if their experience fails to meet expectations. Reducing the percentage of subpar deliveries is critical for the company's long term sustainability. Identifying root cause requires looking into each side of Foodhub's marketplace. Supply-demand imbalances, a poor app experience for couriers, or challenges with certain restaurants are among the many reasons customer orders may be late.
 
-#### Tradeoff #2: Determining where to address the problem
-Determining where to focus initial product discovery presents the first tradeoff, as each side of the marketplace may play a role in delayed customer orders. Foodhub couriers, however, face an especially complex user journey where many things may go wrong. Each courier delivery includes:
+#### Tradeoff #2: Prioritizing problem discovery
+Each side of the marketplace may play a role in delayed customer orders. Foodhub couriers, however, face an especially complex user journey where many things may go wrong. Each courier delivery includes:
 
 * Accepting an Offer
 * Traveling to a Restaurant for Order Pickup
@@ -62,13 +62,26 @@ Determining where to focus initial product discovery presents the first tradeoff
 * Travel to Customer Location
 * Drop-off Order
 
-To support the courier journey, Foodhub's courier app must navigate supply-demand imbalances, batching, delivery distance, variance in restaurant prep time, and dispatch logic all while creating an intuititve courier app experience. Given our target metric is focused on delivery efficiency, starting discovery on the courier side of the marketplace is warranted.
+Foodhub's courier app must navigate supply-demand imbalances, batching, delivery distance, variance in restaurant prep time, and dispatch logic all while creating an intuititve courier app experience. Given our target metric is focused on delivery efficiency, starting discovery on the courier side of the marketplace is reasonable, but it should be paired with app instrumentation that measures each part of the courier journey.
 
-Focusing discovery on Foodhub's courier marketplace introduces another tradeoff: identifying where to start problem discovery across the courier journey.
+#### Decision: Placing bets in the courier ecosystem
+With limited data-driven insights into Foodhub's current operations, early problem discovery will focus on validating hypotheses and experiment design.
 
-#### Decision
-Foodhub's delivery app may have user experience issues, performance issues, or some combination of the two that become simpler problems to solve.
+Three potential hypotheses on why 10% of customer orders take longer than 60 minutes to deliver:
 
+1 - title
+<rationale>
+< impact * confidence * effort >
+
+2 - title
+<rationale>
+< impact * confidence * effort >
+
+3 - title
+<rationale>
+< impact * confidence * effort >
+
+<Designing first experiment>
 
 ## What I Learned (TBD)
 * context on UTA project 1
