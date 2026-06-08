@@ -54,11 +54,17 @@ Weekday and weekend delivery time gaps are worth exploring, though a 6 minute ga
 Foodhub is a New York based company; customers, couriers, and restaurants all have alternative options if their experience fails to meet expectations. Reducing the percentage of subpar deliveries is critical for the company's long term sustainability. Identifying root cause requires looking into each side of Foodhub's marketplace. Supply-demand imbalances, a poor app experience for couriers, or challenges with certain restaurants are among the many reasons customer orders may be late.
 
 #### Tradeoff #2: Determining where to address the problem
-While each side of the marketplace may be a factor in delayed orders, the first discovery decision is whether to investigate app experience issues or marketplace partnership issues. By focusing on app experience, we build a hypothesis that Foodhub's user experience or app performance is creating pain for customers. If we focus on partnerships, our hypothesis shifts toward a mismatch between courier supply, restaurant capacity, and customer demand.
+Determining where to focus initial product discovery presents the first tradeoff, as each side of the marketplace may play a role in delayed customer orders. Foodhub couriers, however, face an especially complex user journey where many things may go wrong. Each courier delivery includes:
 
-Experimenting with courier pay or restaurant partnerships could improve platform participation, but those changes may also negatively impact Foodhub's margins. By contrast, investigating the app experience offers a lower-risk starting point for problem discovery. Operating a three-sided marketplace operations is complex; with limited data available, it's reasonable to hypothesize app issues may be contributing to delayed customer orders.
+* Accepting an Offer
+* Traveling to a Restaurant for Order Pickup
+* Waiting for Pickup at Restaurant
+* Travel to Customer Location
+* Drop-off Order
 
-Focusing discovery on the Foodhub app introduces another tradeoff: starting with the customer-facing app or the courier-facing app. While both experiences may contribute delayed orders, the courier-side has a larger surface area for technical and operational problems. Couriers may struggle accepting orders, navigating to restaurants, navigating to customer locations, handoff to customers, or dealing with app performance issues. Moving across New York City is already difficult; when combined a large number of potential challenges, starting discovery on Foodhub's courier app experience makes sense.
+To support the courier journey, Foodhub's courier app must navigate supply-demand imbalances, batching, delivery distance, variance in restaurant prep time, and dispatch logic all while creating an intuititve courier app experience. Given our target metric is focused on delivery efficiency, starting discovery on the courier side of the marketplace is warranted.
+
+Focusing discovery on Foodhub's courier app introduces another tradeoff: identifying where to start problem discovery across the courier journey.
 
 #### Decision
 Foodhub's delivery app may have user experience issues, performance issues, or some combination of the two that become simpler problems to solve.
