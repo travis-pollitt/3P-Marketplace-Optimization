@@ -1,11 +1,11 @@
 # Third-Party Marketplace Optimization
 
-"Foodhub" operates a fictional third party marketplace, integrating hungry customers desiring delivery with local restaurants aiming to grow sales and independent couriers looking to work flexible hours. Intense competition from established players requires Foodhub to creatively scale operations while attracting new customers, couriers, and restaurants.
+"Foodhub" operates a fictional third party marketplace, integrating hungry customers desiring delivery with local restaurants aiming to grow sales and independent couriers looking to work flexible hours. Intense competition from established players requires Foodhub to improve marketplace reliability while attracting new customers, couriers, and restaurants.
 
 This project explores Foodhub's customer demand data to uncover where potential operational problems exist, what problems are worth solving, and how the company may approach solutions.
 
 ## Business Context
-Foodhub's three-sided marketplace relies on strong, consistent customer demand to satisfy customer order, courier pay, and restaurant revenue. Insights into customer demand and its relationship on delivery times will guide product prioritization across each side of the marketplace.
+Foodhub's three-sided marketplace relies on strong, consistent customer demand to satisfy customer expectationsf, courier pay, and restaurant revenue. Insights into customer demand and its relationship on delivery times will guide product prioritization across each side of the marketplace.
 
 Customer demand may impact delivery time; however, factors such as courier supply, restaurant performance, traffic, and weather can also cause short-term performance degradation.
 
@@ -13,7 +13,7 @@ Customer demand may impact delivery time; however, factors such as courier suppl
 Foodhub currently lacks insights into customer demand data when making product and operational decisions. Without insights into customer demand, the company risks major supply imbalances across each side of the marketplace:
 
   * Customers face long delivery times due to low courier supply
-  * Couriers face low earnings per hour resulting from low customer demand
+  * Couriers face low earnings per active hour 
   * Restaurants face staffing challenges in the event customer demand exceeds/lags expectations
 
 ## Solution Alignment
