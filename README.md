@@ -70,31 +70,35 @@ With limited data-driven insights into Foodhub's current operations, early probl
 Three potential hypotheses on why 10% of customer orders take longer than 60 minutes to deliver:
 
 1 - Foodhub's on-trip navigation capabilities are underperforming
-Navigating New York City traffic is no small feat. Courier routes that appear optimal during certain times of the day may cause significant delays during rush hour. Foodhub's courier app may struggle to accurately predict traffic patterns or potential delays in pockets of the city.
+* Navigating New York City traffic is no small feat. Courier routes that appear optimal during certain times of the day may cause significant delays during rush hour. Foodhub's courier app may struggle to accurately predict traffic patterns or potential delays in pockets of the city.
 
 Impact: High
 Confidence: Medium
 Effort: Medium/High
 
 2 - Foodhub's pricing algorithms are disconnected from supply-demand challenges
-When pricing orders, Foodhub must unpack many different nuances. Courier supply and restaurant demand may not always align on the platform. Additionally, the company likely faces margin pressure from more established competitors in the space. If Foodhub orders are not especially appealing for couriers, couriers may choose to spend their time on other apps, which harms courier supply and results in Foodhub customer orders arriving late.
+* When pricing orders, Foodhub must unpack many different nuances. Courier supply and restaurant demand may not always align on the platform. Additionally, the company likely faces margin pressure from more established competitors in the space. If Foodhub orders are not especially appealing for couriers, couriers may choose to spend their time on other apps, which harms courier supply and results in Foodhub customer orders arriving late.
 
 Impact: High
 Confidence: Low/Medium
 Effort: High
 
 3 - Foodhub's courier app provides a poor courier experience at pick-up or drop-off
-Couriers must deal with constant ambiguity while using the Foodhub app. For example, restaurants may have different processes for pickup. Some customers may prefer face-to-face pickup, while others may prefer no contact drop-off. Handling all unique delivery edge cases might compete against building net-new features in the app. 
+* Couriers must deal with constant ambiguity while using the Foodhub app. For example, restaurants may have different processes for pickup. Some customers may prefer face-to-face pickup, while others may prefer no contact drop-off. Handling all unique delivery edge cases might compete against building net-new features in the app. 
 
 Impact: High
 Confidence: Low
 Effort: Medium
 
-<Designing first experiment>
-To validate Foodhub's on-trip navigation capabilities, 
+To validate Foodhub's on-trip navigation capabilities, we'll instrument trip navigation and begin tracking projected trip navigation times versus actual trip navigation times for two phases of the courier journey:
 
+* Traveling to a Restaurant for Order Pickup
+* Traveling to Customer Location
 
-## What I Learned (TBD)
-* context on UTA project 1
-* python for data analysis
-* Exploratory Data Analysis Lifecycle - starting discovery before Data Science
+Our desired outcome for this experiment is not immediate delivery-time improvement. The first outcome focuses on observability: Foodhub successfully starts measuring projected courier travel time versus actual courier travel time for both parts of the journey. The second desired outcome is validating our first hypothesis and collecting clean data that can be segmented by delivery zone, time, restaurant, or distance. Once this data is captured, Foodhub can make an informed decision on whether to invest in trip navigation upgrades.
+
+## What I Learned
+Product managers are often assigned to domains before analytics or data science partners are available to support. Completing this exploratory data analysis gives me hands-on experience investigating how large datasets are structured, conducting bivariate and multivariate analysis, and writing python code to answer business questions.
+
+Creating this product writeup challenged me to keep an open mind while conducting initial data analysis, problem discovery, and experiment design. Although this project started with a focus on Foodhub's customer demand data, the most signfiicant insights uncovered pointed me towards the percentage of customer orders delayed by more than 60 minutes. Acknowledging the "known unknowns" is critical when defing product strategy, experiments, and execution plans.
+
