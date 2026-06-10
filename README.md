@@ -2,48 +2,33 @@
 
 "Foodhub" operates a fictional third party marketplace, integrating hungry customers desiring delivery with local restaurants aiming to grow sales and independent couriers looking to work flexible hours. Intense competition from established players requires Foodhub to improve marketplace reliability while attracting new customers, couriers, and restaurants.
 
-This project explores Foodhub's customer demand data to uncover where potential operational problems exist, what problems are worth solving, and how the company may approach solutions.
+This project explores Foodhub's customer demand data to uncover where potential operational problems exist, what problems are worth solving, and how the company appproaches experimentation.
 
 ## Business Context
-Foodhub's three-sided marketplace relies on strong, consistent customer demand to satisfy customer expectationsf, courier pay, and restaurant revenue. Insights into customer demand and its relationship on delivery times will guide product prioritization across each side of the marketplace.
+Foodhub's three-sided marketplace relies on strong operational rigor to satisfy customer expectations, courier pay, and restaurant revenue. Insights into customer demand and its relationship with delivery times will guide product prioritization across each side of the marketplace.
 
 Customer demand may impact delivery time; however, factors such as courier supply, restaurant performance, traffic, and weather can also cause short-term performance degradation.
 
 ## Problem Statement
-Foodhub currently lacks insights into customer demand data when making product and operational decisions. Without insights into customer demand, the company risks major supply imbalances across each side of the marketplace:
+Foodhub currently lacks insights into customer demand data when making product and operational decisions. Without insights into customer demand, the company risks major supply-demand imbalances across each side of the marketplace:
 
   * Customers face long delivery times due to low courier supply
-  * Couriers face low earnings per active hour 
+  * Couriers lose trust in the platform without consistent earnings per active hour
   * Restaurants face staffing challenges in the event customer demand exceeds/lags expectations
 
+If left unaddressed, supply-demand imbalances can threaten Foodhub's on-time delivery performance and the marketplace's long-term health.
+
 ## Solution Alignment
-Solution development follows the first project from UT Austin's Postgraduate Program in Machine Learning & Artificial Intelligence for Business Applications. This solution covers the initial exploratory data analysis pre-model build. Steps completed:
-
-#### Understanding the structure of the data
-  * Data shape
-  * Data types
-  * Missing values
-  * Statistical summary
-
-#### Univariate analysis
-  * Exploring all variables and providing observations on their distributions
-  * Top 5 restaurants by order received
-  * Most popular cuisine on weekends
-  * % of orders costing more than 20 dollars
-  * Mean order delivery time
-
-#### Multivariate analysis
-  * Relationships between numerical variables
-  * Relationships between categorical variables
+Solution development follows the first project from UT Austin's Postgraduate Program in Machine Learning & Artificial Intelligence for Business Applications. I used exploratory data analysis to understand order volume, delivery-time distribution, cuisine demand, customer ratings, and weekday/weekend patterns.
 
 #### 3 key insights emerged:
-* Weekday delivery time is six minutes slower then weekend delivery time despite less traffic on the plaform.
+* Weekday delivery time is six minutes slower then weekend delivery time, despite less traffic on the plaform.
 * 10% of customer orders take longer than 60 minutes to deliver.
-* Indian, Italian, and Vietenemase cuisines skew towards five star reviews while remaining more popular during the week, which contradicts the broader platform's popularity on weekends.
+* Indian, Italian, and Vietenemase cuisines skew towards five star reviews while remaining more popular during the week, which contrasts with the broader platform's popularity on weekends.
 
 ## Tradeoffs and Decisions
 #### Tradeoff #1: Choosing an insight to focus on
-Focusing solely on orders taking longer than 60 minutes (%>60mins) to deliver allows Foodhub to invest resources into a problem that impacts topline business metrics and each side of the marketplace. If 10% of Foodhub customers encounter delayed orders:
+Focusing solely on orders taking longer than 60 minutes (%>60mins) to deliver allows Foodhub to invest resources into a problem that impacts customer retention, courier participation, and long-term marketplace growth. If 10% of Foodhub customers encounter delayed orders:
 
 * Customers may lose confidence in the Foodhub platform and take their business elsewhere
 * Couriers may feel their time is better spent delivering for other marketplace apps
@@ -62,7 +47,7 @@ Each side of the marketplace may play a role in delayed customer orders. Foodhub
 * Travel to Customer Location
 * Drop-off Order
 
-Foodhub's courier app must navigate supply-demand imbalances, batching, delivery distance, variance in restaurant prep time, and dispatch logic all while creating an intuititve courier app experience. Given our target metric is focused on delivery efficiency, starting discovery on the courier side of the marketplace is reasonable, but it should be paired with app instrumentation that measures each part of the courier journey.
+Foodhub's courier app must navigate supply-demand imbalances, batching, delivery distance, variance in restaurant prep time, and dispatch logic. Additionally, all this complexity must be displayed to couriers through an easy-to-use app. Given our target metric is focused on delivery efficiency, starting discovery on the courier side of the marketplace is reasonable, but it should be paired with app instrumentation that measures each part of the courier journey.
 
 #### Decision: Placing bets in the courier ecosystem
 With limited data-driven insights into Foodhub's current operations, early problem discovery will focus on validating hypotheses and experiment design.
@@ -89,6 +74,13 @@ Effort: High
 Impact: High
 Confidence: Low
 Effort: Medium
+
+| Hypothesis                                            | Impact | Confidence |      Effort |
+| ----------------------------------------------------- | -----: | ---------: | ----------: |
+| Navigation estimates underperform during active trips |   High |     Medium | Medium/High |
+| Pricing does not reflect supply-demand constraints    |   High | Low/Medium |        High |
+| Courier app creates friction at pickup/drop-off       |   High |        Low |      Medium |
+
 
 To validate Foodhub's on-trip navigation capabilities, we'll instrument trip navigation and begin tracking projected trip navigation times versus actual trip navigation times for two phases of the courier journey:
 
