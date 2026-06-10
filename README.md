@@ -39,7 +39,7 @@ Weekday and weekend delivery time gaps are worth exploring, though a 6 minute ga
 Foodhub is a New York based company; customers, couriers, and restaurants all have alternative options if their experience fails to meet expectations. Reducing the percentage of subpar deliveries is critical for the company's long term sustainability. Identifying root cause requires looking into each side of Foodhub's marketplace. Supply-demand imbalances, a poor app experience for couriers, or challenges with certain restaurants are among the many reasons customer orders may be late.
 
 #### Tradeoff #2: Prioritizing problem discovery
-Each side of the marketplace may play a role in delayed customer orders. Foodhub couriers, however, face an especially complex user journey where many things may go wrong. Each courier delivery includes:
+Each side of the marketplace may play a role in delayed customer orders. Foodhub couriers, however, face an especially complex user journey where many things can go wrong. Each courier delivery includes:
 
 * Accepting an Offer
 * Traveling to a Restaurant for Order Pickup
@@ -47,7 +47,7 @@ Each side of the marketplace may play a role in delayed customer orders. Foodhub
 * Travel to Customer Location
 * Drop-off Order
 
-Foodhub's courier app must navigate supply-demand imbalances, batching, delivery distance, variance in restaurant prep time, and dispatch logic. Additionally, all this complexity must be displayed to couriers through an easy-to-use app. Given our target metric is focused on delivery efficiency, starting discovery on the courier side of the marketplace is reasonable, but it should be paired with app instrumentation that measures each part of the courier journey.
+Foodhub's courier app manages supply-demand imbalances, batching, delivery distance, variance in restaurant prep time, and dispatch logic. Additionally, all this complexity must be displayed to couriers through an easy-to-use app. Given our target metric is focused on delivery efficiency, starting discovery on the courier side of the marketplace is reasonable, but it should be paired with app instrumentation that measures each part of the courier journey.
 
 #### Decision: Placing bets in the courier ecosystem
 With limited data-driven insights into Foodhub's current operations, early problem discovery will focus on validating hypotheses and experiment design.
@@ -56,29 +56,35 @@ Three potential hypotheses on why 10% of customer orders take longer than 60 min
 
 | Rank | Hypothesis                                                        | Impact | Confidence |    Effort   |
 | :--: | ----------------------------------------------------------------- | :----: | :--------: | :---------: |
-|   1  | On-trip navigation capabilities are underperforming            |  High  |   Medium   | Medium/High |
+|   1  | On-trip navigation capabilities are underperforming            |  High  |   Medium   | High |
 |   2  | Pricing algorithms are disconnected from supply-demand conditions |  High  | Low/Medium |     High    |
 |   3  | Courier app provides a poor experience during pickup and/or drop-off |  High  |     Low    |    Medium   |
 
 
 Hypothesis 1 - Foodhub's on-trip navigation capabilities are underperforming
-* Navigating New York City traffic is no small feat. Courier routes that appear optimal during certain times of the day may cause significant delays during rush hour. Foodhub's courier app may struggle to accurately predict traffic patterns or potential delays in pockets of the city.
+* Navigating New York City traffic is not easy. Courier routes that appear optimal during certain times of the day may cause significant delays during rush hour. It's possible Foodhub's courier app struggles to accurately predict traffic patterns or potential delays in pockets of the city.
 
 Hypothesis 2 - Foodhub's pricing algorithms are disconnected from supply-demand challenges
-* When pricing orders, Foodhub must unpack many different nuances. Courier supply and restaurant demand may not always align on the platform. Additionally, the company likely faces margin pressure from more established competitors in the space. If Foodhub orders are not especially appealing for couriers, couriers may choose to spend their time on other apps, which harms courier supply and results in Foodhub customer orders arriving late.
+* When pricing orders, Foodhub must balance marketplace profitability with courier supply and restaurant demand. It's possible the company is underpricing customer orders, resulting in a reduced courier supply that cannot always meet customer demand. If Foodhub orders are not appealing for couriers, couriers can choose to spend their time on other apps, which harms courier supply and results in Foodhub customer orders arriving late.
 
 Hypothesis 3 - Foodhub's courier app provides a poor courier experience at pick-up or drop-off
-* Couriers must deal with constant ambiguity while using the Foodhub app. For example, restaurants may have different processes for pickup. Some customers may prefer face-to-face pickup, while others may prefer no contact drop-off. Handling all unique delivery edge cases might compete against building net-new features in the app. 
+* Couriers operate in constant ambiguity while using the Foodhub app. For example, restaurants may have different processes for pickup. Some customers may prefer face-to-face pickup, while others may prefer no contact drop-off. Handling all unique delivery edge cases might compete against building net-new features in the app. 
 
 To validate Foodhub's on-trip navigation capabilities, we'll instrument trip navigation and begin tracking projected trip navigation times versus actual trip navigation times for two phases of the courier journey:
 
 * Traveling to a Restaurant for Order Pickup
 * Traveling to Customer Location
 
-Our desired outcome for this experiment is not immediate delivery-time improvement. The first outcome focuses on observability: Foodhub successfully starts measuring projected courier travel time versus actual courier travel time for both parts of the journey. The second desired outcome is validating our first hypothesis and collecting clean data that can be segmented by delivery zone, time, restaurant, or distance. Once this data is captured, Foodhub can make an informed decision on whether to invest in trip navigation upgrades.
+Our desired outcome for this experiment is not immediate delivery-time improvement. The first outcome focuses on observability: Foodhub successfully starts measuring projected courier travel time versus actual courier travel time for both parts of the journey. The second desired outcome is validating our first hypothesis and collecting clean data that can be segmented by delivery zone, time, restaurant, or distance. Success will be measured through three metrics:
+
+* % of trips containing projected and actual travel-time data
+* % of trips where p90 between projected and actual < X minutes
+* % of >60mins trips where navigation variance explains a meaningful portion of delay
+
+Once this data is captured, Foodhub can make an informed decision on whether to invest in trip navigation upgrades.
 
 ## What I Learned
 Product managers are often assigned to domains before analytics or data science partners are available to support. Completing this exploratory data analysis gives me hands-on experience investigating how large datasets are structured, conducting bivariate and multivariate analysis, and writing python code to answer business questions.
 
-Creating this product writeup challenged me to keep an open mind while conducting initial data analysis, problem discovery, and experiment design. Although this project started with a focus on Foodhub's customer demand data, the most signfiicant insights uncovered pointed me towards the percentage of customer orders delayed by more than 60 minutes. Acknowledging the "known unknowns" is critical when defing product strategy, experiments, and execution plans.
+Creating this product writeup challenged me to keep an open mind while conducting initial data analysis, problem discovery, and experiment design. Although this project started with a focus on Foodhub's customer demand data, the most signficant insights uncovered pointed me towards the percentage of customer orders delayed by more than 60 minutes. Acknowledging the "known unknowns" is critical when defining product strategy, experiments, and execution plans.
 
