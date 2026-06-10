@@ -79,7 +79,7 @@ Our desired outcome for this experiment is not immediate delivery-time improveme
 
 * % of trips containing projected and actual travel-time data
 * % of trips where p90 between projected and actual < X minutes
-* % of >60mins trips where navigation variance explains a meaningful portion of delay
+* % of >60mins trips where navigation variance > Y minutes
 
 Once this data is captured, Foodhub can make an informed decision on whether to invest in trip navigation upgrades.
 
