@@ -19,7 +19,7 @@ Foodhub currently lacks insights into customer demand data when making product a
 If left unaddressed, supply-demand imbalances can threaten Foodhub's on-time delivery performance and the marketplace's long-term health.
 
 ## Solution Alignment
-Solution development follows the first project from UT Austin's Post Graduate Program in Machine Learning & Artificial Intelligence for Business Applications. I used exploratory data analysis to understand order volume, delivery-time distribution, cuisine demand, customer ratings, and weekday/weekend patterns.
+Solution development follows the first project from UT Austin's Post Graduate Program in Machine Learning & Artificial Intelligence for Business Applications. The program provided a fixed dataset containing nearly 2,000 records without referencing external data. I used exploratory data analysis to understand order volume, delivery-time distribution, cuisine demand, customer ratings, and weekday/weekend pattern before identifying three key insights for further exploration.
 
 #### 3 key insights emerged:
 * Weekday delivery time is six minutes slower than weekend delivery time, despite less traffic on the platform.
@@ -68,7 +68,7 @@ Hypothesis 2 - Foodhub's pricing algorithms are disconnected from supply-demand 
 * When pricing orders, Foodhub must balance marketplace profitability with courier supply and restaurant demand. It's possible the company is underpricing customer orders, resulting in a reduced courier supply that cannot always meet customer demand. If Foodhub orders are not appealing for couriers, couriers can choose to spend their time on other apps, which harms courier supply and results in Foodhub customer orders arriving late.
 
 Hypothesis 3 - Foodhub's courier app provides a poor courier experience at pickup or drop-off
-* Couriers operate in constant ambiguity while using the Foodhub app. For example, restaurants may have different processes for pickup. Some customers may prefer face-to-face pickup, while others may prefer no-contact drop-off. Handling all unique delivery edge cases might compete against building net-new features in the app. 
+* Couriers operate in constant ambiguity while using the Foodhub app. For example, restaurants may have different processes for pickup. Some customers may prefer face-to-face pickup, while others may prefer no-contact drop-off. Handling all unique delivery edge cases might compete against building net-new features in the app.
 
 To validate Foodhub's on-trip navigation capabilities, we'll instrument trip navigation and begin tracking projected versus actual courier travel times for two phases of the courier journey:
 
