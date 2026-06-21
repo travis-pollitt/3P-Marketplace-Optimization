@@ -62,10 +62,10 @@ Three potential hypotheses on why 10% of customer orders take longer than 60 min
 
 
 Hypothesis 1 - Foodhub's on-trip navigation capabilities are underperforming
-* Navigating New York City traffic is not easy. Courier routes that appear optimal during certain times of the day may cause significant delays during rush hour. It's possible Foodhub's courier app struggles to accurately predict traffic patterns or potential delays in pockets of the city.
+* Navigating New York City traffic is difficult, and courier routes that appear optimal during certain times of the day may cause significant delays during rush hour. Foodhub's courier app may struggle to accurately predict traffic patterns or potential delays in pockets of the city. This makes courier travel experience a plausible driver of late deliveries, though the available data supports only medium confidence at this stage.
 
 Hypothesis 2 - Foodhub's pricing algorithms are disconnected from supply-demand challenges
-* When pricing orders, Foodhub must balance marketplace profitability with courier supply and restaurant demand. It's possible the company is underpricing customer orders, resulting in a reduced courier supply that cannot always meet customer demand. If Foodhub orders are not appealing for couriers, couriers can choose to spend their time on other apps, which harms courier supply and results in Foodhub customer orders arriving late.
+* When pricing orders, Foodhub must balance marketplace profitability with courier supply and restaurant demand. The company may be pricing orders in a way that reduces courier earnings. If Foodhub orders are not appealing for couriers, couriers can choose to spend their time on other apps, which harms courier supply and results in Foodhub customer orders arriving late.
 
 Hypothesis 3 - Foodhub's courier app provides a poor courier experience at pickup or drop-off
 * Couriers operate in constant ambiguity while using the Foodhub app. For example, restaurants may have different processes for pickup. Some customers may prefer face-to-face pickup, while others may prefer no-contact drop-off. Handling all unique delivery edge cases might compete against building net-new features in the app.
@@ -81,7 +81,7 @@ Our desired outcome for this experiment is not immediate delivery-time improveme
 * % of trips where projected courier travel time is within five minutes of projected traveltime
 * % of >60mins trips (delayed orders) where navigation variance > 10 minutes
 
-Once this data is captured, Foodhub can make an informed decision on whether to invest in courier travel upgrades.
+Once this data is captured, Foodhub can estimate the total business opportunity of upgrading the courier travel experience. If the projected reduction in late deliveries is 25% or greater, Foodhub should invest in courier travel features. If not, Foodhub should conduct a second experiment on pricing algorithms.
 
 ## What I Learned
 Product managers often need to make early discovery decisions before analytics, data science, or engineering partners are engaged. Completing this exploratory data analysis gives me hands-on experience investigating how large datasets are structured, conducting bivariate and multivariate analysis, and writing python code to answer business questions.
